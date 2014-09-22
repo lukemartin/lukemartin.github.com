@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <div class="section-wrap">
+    <section>
+      <a href="../" class="backey-back"><i class="icon-arrow-left"></i>&nbsp;<span>Work</span></a>
+
+      <h1>HAIRCVT</h1>
+      <p>
+        HAIRCVT is a new service to help you make inspired choices with your hair: and then find the perfect stylist to cut it for you.
+      </p>
+    </section>
+  </div>
+
+  <div class="section-wrap alt">
+    <section>
+      <div class="cols cols-2">
+        <div class="col three-quarters">
+          <h2>My Role</h2>
+          <p>
+            As sole developer, I was responsible for the build of HAIRCVT's full tech stack, which included:
+          </p>
+          <ul>
+            <li>the HAIRCVT <a href="../haircvt-app/">iOS and Android apps</a></li>
+            <li>an admin area to manage salons, stylists and hairstyles</li>
+            <li>the HAIRCVT website</li>
+            <li>a private API to handle the sycning of data between the apps, database, and the website</li>
+          </ul>
+          <p>
+            The website is responsive, and uses a custom module factory to manage dependencies and bootstrap functionality. The History/PushSate API is used with the filters to maintain state and upload search results in situ.
+          </p>
+          <p>
+            The Node.js applications are deployed to Amazon EC2 instances using Capistrano. Images are stored on Amazon S3.
+          </p>
+        </div>
+        <div class="col one-quarter">
+          <h2>Key Skills</h2>
+          <ul class="unstyled">
+            <li><i class="icon-arrow-right"></i> Node.js</li>
+            <li><i class="icon-arrow-right"></i> MongoDB</li>
+            <li><i class="icon-arrow-right"></i> Express</li>
+            <li><i class="icon-arrow-right"></i> Amazon AWS</li>
+            <li><i class="icon-arrow-right"></i> Capistrano</li>
+            <li><i class="icon-arrow-right"></i> RWD</li>
+            <li><i class="icon-arrow-right"></i> Pub/Sub</li>
+            <li><i class="icon-arrow-right"></i> History API</li>
+            <li><i class="icon-arrow-right"></i> SASS</li>
+            <li><i class="icon-arrow-right"></i> Google Maps</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="section-wrap">
+    <section>
+      <figure>
+        <img src="./search.jpg" alt="HAIRCVT Hairstyle Search">
+      </figure>
+      <figcaption>
+        Hairstyle Search
+      </figcaption>
+    </section>
+  </div>
+
+  <div class="section-wrap alt">
+    <section>
+      <figure>
+        <img src="./filters.jpg" alt="HAIRCVT Hairstyle Filters">
+      </figure>
+      <figcaption>
+        Hairstyle Filters
+      </figcaption>
+    </section>
+  </div>
+
+  <div class="section-wrap">
+    <section>
+      <figure>
+        <img src="./salon-search.jpg" alt="HAIRCVT Salon Search">
+      </figure>
+      <figcaption>
+        Salon Search Using Google Maps
+      </figcaption>
+    </section>
+  </div>
+
+  <div class="section-wrap alt">
+    <section>
+      <figure>
+        <img src="./stylist.jpg" alt="HAIRCVT Stylist Profile">
+      </figure>
+      <figcaption>
+        Stylist Profile
+      </figcaption>
+    </section>
+  </div>
+
+  <div class="section-wrap">
+    <section class="text-center">
+      <p>
+        <a href="http://haircvt.com" class="button" target="_blank">
+          View haircvt.com
+        </a>
+      </p>
+      <p>
+        <a href="../" class="">
+          <i class="icon-arrow-left"></i> View more work
+        </a>
+      </p>
+    </section>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+.header-wrap
+  background: transparent url(/images/header-bg-blue.jpg) no-repeat center center;
+  padding: 10px 0
+  position: relative
+
+  &:before
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    content: ""
+    position: absolute
+    background-color: rgba(0,0,0,0.15)
+
+  .main-header
+    position: relative
+    padding: 10px
+    width: 100%
+
+    .name
+      font-size: 26px
+
+      a
+        color: #fff
+      span
+        color: $highlight
+      h1
+        display: inline
+        font-size: inherit
+        margin: 0
+
+@media (min-width: $bp)
+  .header-wrap
+    padding: 30px 0
+
+    .main-header
+      margin: 0 auto
+      max-width: $width
+
+@media (min-width: $width)
+  .header-wrap
+    .main-header
+      padding: 10px 0

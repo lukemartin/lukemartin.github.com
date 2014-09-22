@@ -1,0 +1,29 @@
+.project
+  overflow: hidden
+
+  .project-image
+    // margin-bottom: 10px
+  .project-meta
+    text-align: center
+
+@media (min-width: $bp)
+  .project
+    position: relative
+
+    .project-image
+      float: right
+      width: 37.5%
+
+    .project-meta
+      width: 52.5%
+      top: 50%
+      left: 5%
+      position: absolute
+      transform: translateY(-50%)
+
+  &.alt
+    .project-image
+      float: left;
+    .project-meta
+      left: auto
+      right: 5%

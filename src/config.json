@@ -1,0 +1,23 @@
+{
+  "locals": {
+    "url": "",
+    "name": "",
+    "owner": "",
+    "description": ""
+  },
+  "plugins": [
+    "wintersmith-nunjucks",
+    "./plugins/contentHelpers.js"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "port": 8081,
+  "output": "../"
+}

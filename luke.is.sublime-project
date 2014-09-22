@@ -1,0 +1,8 @@
+{
+  "folders": [{
+    "name": "luke.is",
+    "path": ".",
+    "file_exclude_patterns": ["*.sublime-workspace"],
+    "folder_exclude_patterns": ["node_modules", "build", ".sass-cache"]
+  }]
+}

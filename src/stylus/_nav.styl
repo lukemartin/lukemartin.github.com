@@ -1,0 +1,29 @@
+.main-nav
+  margin-top: 10px
+
+  li
+    display: inline
+    margin-right: 5px
+
+    a
+      color: #fff
+      font-size: 17px
+      text-transform: lowercase
+
+    &.active
+      a
+        color: $highlight
+
+@media (min-width: $bp)
+  .main-nav
+    position: absolute
+    top: 5px
+    right: 5px
+
+    li
+      margin-right: 0
+      margin-left: 5px
+
+@media (min-width: $width)
+  .main-nav
+    right: 0
