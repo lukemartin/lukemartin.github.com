@@ -3,6 +3,7 @@
   background-size: 100% auto;
   padding: 10px 0
   position: relative
+  -webkit-animation: header-anim 20s ease-in-out 0s infinite alternate;
 
   &:before
     top: 0
@@ -42,3 +43,12 @@
   .header-wrap
     .main-header
       padding: 10px 0
+
+@-webkit-keyframes header-anim {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(200deg);
+  }
+}
