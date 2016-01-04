@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+  Developer: Luke Martin
+  Site: luke.is
+  Twitter: @luke_is
+  Location: London, UK.
+
+/* SITE */
+  Last update: 2014/09/22
+  Standards: HTML5, CSS3
+  Components: Wintersmith, Stylus, CoffeeScript, TypeKit, PrefixFree, GoSquared
+  Software: Sublime Text 2, Gulp, iTerm 2

@@ -1,0 +1,9 @@
+{
+  "locals": {
+  },
+  "plugins": [
+    "wintersmith-nunjucks"
+  ],
+  "output": "../dist",
+  "port": 8991
+}

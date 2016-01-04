@@ -4,9 +4,16 @@
   "description": "Portfolio of Luke Martin",
   "main": "gulpfile.js",
   "dependencies": {
+    "browser-sync": "^2.11.0",
+    "gulp": "^3.9.0",
+    "gulp-header": "^1.7.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-shell": "^0.5.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "node-bourbon": "^4.2.3",
+    "wintersmith-nunjucks": "^1.1.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
   },
   "repository": {

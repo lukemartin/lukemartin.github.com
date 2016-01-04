@@ -1,0 +1,24 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+section:nth-child(even) {
+  background-color: #f2f2f2;
+}
