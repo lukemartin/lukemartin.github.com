@@ -4,18 +4,24 @@
   "description": "Portfolio of Luke Martin",
   "main": "gulpfile.js",
   "dependencies": {
+    "babelify": "^7.2.0",
     "browser-sync": "^2.11.0",
+    "browserify": "^12.0.1",
     "gulp": "^3.9.0",
+    "gulp-eslint": "^1.1.1",
     "gulp-header": "^1.7.1",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
-    "gulp-shell": "^0.5.1",
     "gulp-sourcemaps": "^1.6.0",
     "node-bourbon": "^4.2.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1",
     "wintersmith-nunjucks": "^1.1.0"
   },
   "devDependencies": {},
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:lukemartin/lukemartin.github.com.git"
