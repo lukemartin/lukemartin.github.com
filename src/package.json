@@ -4,9 +4,9 @@
   "description": "Portfolio of Luke Martin",
   "main": "gulpfile.js",
   "dependencies": {
-    "babelify": "^7.2.0",
+    "babelify": "^6.1.2",
     "browser-sync": "^2.11.0",
-    "browserify": "^12.0.1",
+    "browserify": "^10.2.4",
     "gulp": "^3.9.0",
     "gulp-eslint": "^1.1.1",
     "gulp-header": "^1.7.1",

@@ -1,10 +1,49 @@
+$anim-duration: 0.4s;
+
 .mh {
+  @include transform(translateZ(0));
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+  @include transition(all $anim-duration ease-in-out);
+  box-shadow: 0 0 7px 0px lighten($grey-darkest, 70%);
+  background-color: #fff;
+  min-height: 50px;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 
 .mh__content {
   @include flex(1);
   text-align: center;
+  position: relative;
+}
+
+.mh__title {
+  @include transition(all $anim-duration ease-in-out);
+  font-size: 2.4rem;
+}
+.mh__subtitle {
+  @include transition(all $anim-duration ease-in-out);
+  max-height: 0;
+  opacity: 0;
+  margin: 0;
+}
+
+.mh--full {
+  box-shadow: 0 0 0 0 transparent;
+  min-height: 100vh;
+
+  .mh__title {
+    font-size: 4.1rem;
+    margin-bottom: 10px;
+  }
+  .mh__subtitle {
+    margin-bottom: 20px;
+    max-height: 200px;
+    opacity: 1;
+    font-size: 1.8rem;
+  }
 }

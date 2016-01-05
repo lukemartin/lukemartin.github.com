@@ -1,12 +1,19 @@
 .mn {
+  margin: 0;
 }
 
 .mn__links {
 
 }
 
-.mn__link {
+.mn__item {
   display: inline-block;
   margin-left: 0.67rem;
   margin-right: 0.67rem;
+}
+
+.mn__link {
+  color: $grey-darkest;
+  text-decoration: underline;
+  font-size: 1.3rem;
 }

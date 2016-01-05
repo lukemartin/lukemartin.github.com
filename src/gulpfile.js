@@ -34,7 +34,7 @@ var banner = ['/**',
 
 // Functions
 function compileJS(watch) {
-  var bundler = browserify('js/app.js', { debug: true }).transform(babelify);
+  var bundler = browserify('./js/app.js', { debug: true }).transform(babelify);
 
   function bundle() {
     console.log('~> Compiling JS');
@@ -44,7 +44,7 @@ function compileJS(watch) {
       .pipe(source('app.js'))
       .pipe(buffer())
       .pipe(header(banner, { pkg: pkg }))
-      .pipe(gulp.dest('contents/js'));
+      .pipe(gulp.dest('./contents/js'));
   }
 
   if (watch) {
@@ -64,12 +64,20 @@ gulp.task('serve', ['sass', 'lint'], function() {
   });
 
   compileJS(true);
+
   gulp.watch(['scss/**/*.scss'], ['sass']);
   gulp.watch(['js/**/*.js'], ['lint']);
-  gulp.watch(['**/*.html', 'contents/js/**/*.js'], browserSync.reload);
+  gulp.watch(['contents/js/**/*.js'], browserSync.reload);
+
+  // To account for Wintersmith picking up the changes :/
+  gulp.watch(['**/*.html'], function() {
+    setTimeout(function(){
+      browserSync.reload();
+    }, 500);
+  });
 });
 
-gulp.task('sass', function() {
+gulp.task('sass', function(done) {
   console.log('~> Compiling Sass');
 
   return gulp.src('scss/app.scss')
@@ -82,6 +90,10 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./contents/css'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('js', function() {
+  compileJS();
 });
 
 gulp.task('lint', function() {

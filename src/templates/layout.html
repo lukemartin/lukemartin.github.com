@@ -2,11 +2,18 @@
 <html>
 
   <head>
+    <!-- TypeKit -->
+    <script src="https://use.typekit.net/gtq8wca.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
     <!-- Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta charset="utf-8">
+
     <title>Hello - luke.is</title>
     <meta name="description" content="Portfolio of Luke Martin, a freelance Developer based in London.">
+
+    <base href="/">
 
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
@@ -14,39 +21,26 @@
 
   <body ng-app="app">
 
-    <header class="mh full-height">
+    <header class="mh" app-header>
       <div class="mh__content">
-        <h1 class="mh__title">Blah Blahsome</h1>
+        <h1 class="mh__title"><a ui-sref="index" class="link-unstyled">Blah Blahsome</a></h1>
         <h2 class="mh__subtitle">Lorem Ipsum Dolor Blahblah</h2>
 
         <nav class="mn">
-          <ul class="mn__links list-unstyled">
-            <li class="mn__link"><a href="#about">About</a></li>
-            <li class="mn__link"><a href="#work">Work</a></li>
-            <li class="mn__link"><a href="#contact">Contact</a></li>
+          <ul class="mn__items list-unstyled">
+            <li class="mn__item"><a ui-sref="about" class="mn__link">About</a></li>
+            <li class="mn__item"><a ui-sref="work" class="mn__link">Work</a></li>
+            <li class="mn__item"><a ui-sref="contact" class="mn__link">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <section id="about" class="full-height">
-      <h1>About</h1>
-    </section>
-
-    <section id="work" class="full-height">
-      <h1>Work</h1>
-    </section>
-
-    <section id="contact" class="full-height">
-      <h1>Contact</h1>
-    </section>
-
-    <footer class="mf">
-      <small>Lorem ipsum</small>
-    </footer>
+    <div class="main-content" ui-view></div>
 
     <!-- Scripts -->
     <script src="/js/lib/angular.js"></script>
+    <script src="/js/lib/angular-ui-router.js"></script>
     <script src="/js/app.js"></script>
 
   </body>
