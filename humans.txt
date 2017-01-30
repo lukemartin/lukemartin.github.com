@@ -8,7 +8,7 @@
   Location: London, UK.
 
 /* SITE */
-  Last update: 2014/09/22
+  Last update: 2017/01/39
   Standards: HTML5, CSS3
-  Components: Wintersmith, Stylus, CoffeeScript, TypeKit, PrefixFree, GoSquared
-  Software: Sublime Text 2, Gulp, iTerm 2
+  Components: Meow
+  Software: VSCode, iTerm 2
