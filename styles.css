@@ -21,7 +21,7 @@ body {
 
 body:before {
 	content: "";
-	background: transparent url(./m.jpg) no-repeat center bottom;
+	/* background: transparent url(./m.jpg) no-repeat center bottom; */
 	position: absolute;
 	bottom: -60px;
 	width: 100%;
