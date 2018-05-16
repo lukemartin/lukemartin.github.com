@@ -41,6 +41,8 @@ h1 {
 	color: #333;
 }
 
+body,
+h1,
 a, a:link, a:active, a:visited, a:hover {
 	color: #333;
 }
