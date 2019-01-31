@@ -6,9 +6,3 @@
   Site: luke.is
   Twitter: @luke_is
   Location: London, UK.
-
-/* SITE */
-  Last update: 2017/01/39
-  Standards: HTML5, CSS3
-  Components: Meow
-  Software: VSCode, iTerm 2
